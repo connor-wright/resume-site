@@ -1,48 +1,19 @@
-<p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby minimal starter
+  Resume Website
 </h1>
 
-## 🚀 Quick start
+## Info
 
-1.  **Create a Gatsby site.**
+1.  **Why**
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    A basic site to show my front end experience and a place for you to learn more about me. 
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+2.  **How**
 
-2.  **Start developing.**
+    This site is a Gatsby/React app. Ill be sure to update other technologies I use here
 
-    Navigate into your new site’s directory and start it up.
+3.  **Who**
 
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
+    I am Connor Wright an eager software engineer looking to solve engaging problems. 
+    If you wish to contact me please email me @ connor.d.wright1996@gmail.com!
 
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
