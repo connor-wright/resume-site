@@ -8,6 +8,7 @@ import CodeIcon from '@material-ui/icons/Code';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 // react router
+// todo need to replace this with ReachRouter (What gatsby uses)
 import {
   Route,
   NavLink,
@@ -97,7 +98,6 @@ class App extends Component {
             </Toolbar>
           </AppBar>
             <div className="Content">
-              <Route path="/" component={AboutMe}/>
               <Route path="/AboutMe" component={AboutMe}/>
               <Route path="/Projects" component={Projects}/>
               <Route path="/More" component={More}/>
