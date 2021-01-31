@@ -97,6 +97,7 @@ class App extends Component {
             </Toolbar>
           </AppBar>
             <div className="Content">
+              <Route path="/" component={AboutMe}/>
               <Route path="/AboutMe" component={AboutMe}/>
               <Route path="/Projects" component={Projects}/>
               <Route path="/More" component={More}/>
