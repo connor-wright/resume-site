@@ -3,8 +3,6 @@ import App from "../component/App";
 import "fontsource-roboto";
 import ReactDom from "react-dom";
 
-// set body style
-document.body.style.margin = "0px";
 const IndexPage = () => {
   return ReactDom.render(
     <App />,
