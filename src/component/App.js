@@ -6,19 +6,14 @@ import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import CodeIcon from '@material-ui/icons/Code';
 import GitHubIcon from '@material-ui/icons/GitHub';
-
-// react router
-// todo need to replace this with ReachRouter (What gatsby uses)
-import {
-  Route,
-  NavLink,
-  HashRouter
-} from "react-router-dom";
+//ReachRouter
+import { Router, Link } from '@reach/router';
 // other pages
-import AboutMe from   "./AboutMe";
 import More from      "./More";
 import Projects from  "./Projects";
-
+import AboutMe from "./AboutMe";
+let Home = () => <div>Hello Home Page</div>;
+  
 const styles = {
   root: {
     flexGrow: 1,
@@ -36,73 +31,72 @@ class App extends Component {
     const {classes} = this.props;
     return (
       <div className={classes.root}>
-        <HashRouter>
-          <AppBar position="static">
-            <Toolbar variant="dense">
-                <IconButton 
-                  component={NavLink} 
-                  to="/AboutMe" 
-                  className={classes.menuButton} 
-                  edge="start" color="inherit" 
-                  aria-label="about-me"
-                >
-                  <Typography variant="h6" color="inherit">
-                    About Me
-                  </Typography>
-                </IconButton>
-                <IconButton 
-                  component={NavLink} 
-                  to="/Projects" 
-                  className={classes.menuButton} 
-                  edge="start" 
-                  color="inherit" 
-                  aria-label="projects"
-                >
-                  <Typography variant="h6" color="inherit">
-                    Projects
-                  </Typography>
-                </IconButton>
-                <IconButton 
-                  component={NavLink} 
-                  to="/More"
-                  className={classes.menuButton} 
-                  edge="start" 
-                  color="inherit" 
-                  aria-label="more"
-                >
-                  <Typography variant="h6" color="inherit">
-                    More
-                  </Typography>
-                </IconButton>
-              <div className={classes.spacer}/>
+        <AppBar position="static">
+          <Toolbar variant="dense">
               <IconButton 
+                component={Link} 
+                to="about-me" 
                 className={classes.menuButton} 
-                href="https://github.com/connor-wright"
-                target="_blank"
-                edge="start" 
-                color="inherit" 
-                aria-label="github"
+                edge="start" color="inherit" 
+                aria-label="about-me"
               >
-                <GitHubIcon/>
+                <Typography variant="h6" color="inherit">
+                  About Me
+                </Typography>
               </IconButton>
               <IconButton 
+                component={Link} 
+                to="projects" 
                 className={classes.menuButton} 
-                href="https://github.com/connor-wright/resume-site"
-                target="_blank"
                 edge="start" 
                 color="inherit" 
-                aria-label="source-code"
+                aria-label="projects"
               >
-                <CodeIcon/>
+                <Typography variant="h6" color="inherit">
+                  Projects
+                </Typography>
               </IconButton>
-            </Toolbar>
-          </AppBar>
-            <div className="Content">
-              <Route path="/AboutMe" component={AboutMe}/>
-              <Route path="/Projects" component={Projects}/>
-              <Route path="/More" component={More}/>
-            </div>
-          </HashRouter>
+              <IconButton 
+                component={Link} 
+                to="more"
+                className={classes.menuButton} 
+                edge="start" 
+                color="inherit" 
+                aria-label="more"
+              >
+                <Typography variant="h6" color="inherit">
+                  More
+                </Typography>
+              </IconButton>
+            <div className={classes.spacer}/>
+            <IconButton 
+              className={classes.menuButton} 
+              href="https://github.com/connor-wright"
+              target="_blank"
+              edge="start" 
+              color="inherit" 
+              aria-label="github"
+            >
+              <GitHubIcon/>
+            </IconButton>
+            <IconButton 
+              className={classes.menuButton} 
+              href="https://github.com/connor-wright/resume-site"
+              target="_blank"
+              edge="start" 
+              color="inherit" 
+              aria-label="source-code"
+            >
+              <CodeIcon/>
+            </IconButton>
+          </Toolbar>
+        </AppBar>
+        <Router>
+          <Home path="/"/>
+          <AboutMe path="about-me"/>
+          <Projects path="projects"/>
+          <More path="more"/>
+        </Router>
       </div>
     );
   }
