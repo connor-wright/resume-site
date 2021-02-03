@@ -9,10 +9,10 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 //ReachRouter
 import { Router, Link } from '@reach/router';
 // other pages
+import Home from      "./Home";
 import More from      "./More";
 import Projects from  "./Projects";
-import AboutMe from "./AboutMe";
-let Home = () => <div>Hello Home Page</div>;
+import AboutMe from   "./AboutMe";
   
 const styles = {
   root: {
@@ -103,4 +103,3 @@ class App extends Component {
 }
 
 export default withStyles(styles)(App);
-
