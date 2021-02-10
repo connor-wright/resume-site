@@ -1,16 +1,16 @@
-import React, {Component} from "react";
-import { withStyles} from '@material-ui/core/styles';
+import React, { Component } from "react";
+import { withStyles } from "@material-ui/core/styles";
 
-const styles = {
-};
+const styles = {};
 
 class Projects extends Component {
-    render() {
-        return (
-            <div>
+  render() {
+    return (
+      <div>
         <h2>STUFF</h2>
-        <p>Mauris sem velit, vehicula eget sodales vitae,
-        rhoncus eget sapien:</p>
+        <p>
+          Mauris sem velit, vehicula eget sodales vitae, rhoncus eget sapien:
+        </p>
         <ol>
           <li>Nulla pulvinar diam</li>
           <li>Facilisis bibendum</li>
@@ -20,8 +20,7 @@ class Projects extends Component {
         </ol>
       </div>
     );
-    }
+  }
 }
-
 
 export default withStyles(styles)(Projects);

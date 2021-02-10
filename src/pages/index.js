@@ -5,9 +5,7 @@ import "fontsource-roboto";
 import "../styles/global.css";
 
 const IndexPage = () => {
-  return (
-    <App />
-  );
+  return <App />;
 };
 
 export default IndexPage;
