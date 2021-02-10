@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { withStyles } from "@material-ui/core/styles";
-import Profile from "../../public/images/profile.jpg";
 import Divider from "@material-ui/core/Divider";
 
 const center = {
@@ -37,7 +36,7 @@ class Home extends Component {
         <div className={classes.profileContainer}>
           <img
             className={classes.profile}
-            src={Profile}
+            src={"./profile.jpg"}
             alt="Connor Wright's profile"
           />
         </div>
